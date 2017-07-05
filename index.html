@@ -1,0 +1,139 @@
+<html>
+<head>
+  <title>What is Leaflet.js, Anyway?</title>
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <style>
+    #map{ width: 900px; height: 500px; }
+  </style>
+</head>
+<body>
+
+  <body class="container-fluid">
+
+  <div class = "container">
+    <div class="jumbotron">
+     <h1>What is Leaflet, Anyways?</h1>
+     <div class ="well">
+       <div class="btn-group" role="group" aria-label="Leaflet Intro Controls">
+        <a href="http://leafletjs.com/reference-1.1.0.html" class="btn btn-secondary">Leaflet.js Docs</a>
+       <button type="button" class="btn btn-secondary">Intro</button>
+       <button type="button" class="btn btn-secondary">Example Map</button>
+       <button type="button" class="btn btn-secondary">Presentation</button>
+
+     </div>
+   </div>
+ </div>
+
+ <div class="container">
+   <div class="row article">
+   <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
+
+        <div class ="well"><h2>Intro to Leaflet</h2></div>
+        <p>Leaflet is a lightweight mapping library for Javascript. Well-documented,
+        with an active developer community, and weighing in at only 38k, it is
+      one of the leading mapping libraries used on the web today.</p>
+
+      <p><strong>Leaflet Basics</strong></p>
+
+      <p>Every Leaflet map has a few things in common:</p>
+
+      <ol>
+        <li>A basemap;
+        <li>A tile layer corresponding to that basemap;
+        <li>An initial view, which sets the center point of the map and the zoom level.
+      </ol>
+
+      <p>All of these are called on the .map class, Leaflet's central class.</p>
+
+      <p>But just showing a basemap and its corresponding tiles isn't all that interesting, and
+      leaflet probably wouldn't exist if simple .png images of maps would do the job. Leaflet
+      allows us to make data-driven maps with elements that we can style with CSS.</p>
+
+      <p>Leaflet consumes GeoJSON, a flavor of JSON that lets us express latitude/longitude
+      pairs and lots of other kinds of data about those points.</p>
+
+      <p>In our example map below, we're using a basemap and tiles from the Metropolitan
+      Area Planning Commission, an agency of the state of Massachusetts that does
+      civic planning work. MAPC does a lot of transportation infrastructure work,
+      including work that attempts to improve conditions for pedestrians and cyclists.</p>
+
+      <p>We can add a tile layer that shows bike trails and lanes from MAPC.</p>
+
+      <p>That's interesting, but how does it relate to, say, bike accident data?</p>
+
+      <p>I used the following  dataset on bike/car collisions.</p>
+
+      <p>Since that dataset is in Excel, I needed to convert it into GeoJSON.
+      But first, I noticed that what looked like lat/lon data was actually not.
+      That meant we had to geocode the addresses. After concatenating fields
+      with the address, city and state name, I handed the .csv data to a
+      <a href = "https://www.doogal.co.uk/BatchGeocoding.php">batch geocoder</a>,
+      which translated the plain-english addresses into lat/lon pairs.</p>
+
+      <p>That still needed to be converted into GeoJSON, which can be done at
+      <a href ="http://www.convertcsv.com/csv-to-geojson.htm">ConvertCSV.com</a>.</p>
+
+      <p>Leaflet depends on jQuery to load datasets, but now that we have
+      our data in GeoJSON, we can call it.</p>
+
+   </div>
+ </div>
+ </div>
+
+ <div class="container">
+  <div class="row article">
+  <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
+  <div id="map"></div>
+
+  <script>
+
+  // initialize the map
+  var map = L.map('map').setView([42.35, -71.08], 13);
+
+  // load a tile layer
+  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+    {
+      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+    // bike lanes
+L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
+{
+  maxZoom: 17,
+  minZoom: 9
+}).addTo(map);
+
+// load GeoJSON from an external file
+$.getJSON("bike-data-json.geojson",function(data){
+  // add GeoJSON layer to the map once the file is loaded
+  L.geoJson(data).addTo(map);
+});
+
+
+  </script>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row article">
+  <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
+
+
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
