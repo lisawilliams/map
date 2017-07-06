@@ -110,17 +110,17 @@
     }).addTo(map);
 
     // bike lanes
-// L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
-// {
-//   maxZoom: 17,
-//   minZoom: 9
-// }).addTo(map);
+L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
+{
+  maxZoom: 17,
+  minZoom: 9
+}).addTo(map);
 
 // load GeoJSON from an external file
-// $.getJSON("bike-data-json.geojson",function(data){
-//   // add GeoJSON layer to the map once the file is loaded
-//   L.geoJson(data).addTo(map);
-// });
+$.getJSON("bike-data-json.geojson",function(data){
+  // add GeoJSON layer to the map once the file is loaded
+  L.geoJson(data).addTo(map);
+});
 
 
   </script>
