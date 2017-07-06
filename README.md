@@ -16,7 +16,7 @@ Examples of Leaflet-based maps shown in my talk:
 * [Grand Canyon Geology](http://rclark.github.io/grand-canyon-geology/) Note the use of legends that respond to where a user mousovers;
 * [LeafArctica](http://lo-ise.github.io/leafarctica/#0/-87/0) which maps satellite photography of Antarctica with a set of tiles with lat/lon coordinates. You can match photos to lat/lon to make 'photomaps.'
 * [Windy](https://www.windy.com/?53.801,-1.582,4), a leaflet-based map that uses realtime data from weather stations
-* [Zelda: Breath of the Wild] Maps don't have to be of Earth! Here's a map of Hyrule from the popular video game Zelda.
-* [Every Shot Kobe Bryant Ever Took](http://graphics.latimes.com/kobe-every-shot-ever/) They don't even really have to be maps at all, as with this diagram of an NBA player's shots. 
+* [Zelda: Breath of the Wild](https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/) Maps don't have to be of Earth! Here's a map of Hyrule from the popular video game Zelda.
+* [Every Shot Kobe Bryant Ever Took](http://graphics.latimes.com/kobe-every-shot-ever/) They don't even really have to be maps at all, as with this diagram of an NBA player's shots.
 
 Feel free to visit my data visualization blog, [Data For Radicals](http://dataforradicals.com), or to follow me on Twitter, where I am [@lisawilliams](http://twitter.com/lisawilliams).
