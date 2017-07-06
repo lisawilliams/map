@@ -1,16 +1,14 @@
 <html>
 <head>
   <title>What is Leaflet.js, Anyway?</title>
-  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <!-- <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script> -->
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-
-  
-  <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script> -->
-
+  crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style>
     #map{ width: 900px; height: 500px; }
   </style>
@@ -96,6 +94,10 @@
 
   <script>
 
+// require leaflet
+
+// const L = require('leaflet.js')
+
   // initialize the map
   var map = L.map('map').setView([42.35, -71.08], 13);
 
@@ -108,17 +110,17 @@
     }).addTo(map);
 
     // bike lanes
-L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
-{
-  maxZoom: 17,
-  minZoom: 9
-}).addTo(map);
+// L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
+// {
+//   maxZoom: 17,
+//   minZoom: 9
+// }).addTo(map);
 
 // load GeoJSON from an external file
-$.getJSON("bike-data-json.geojson",function(data){
-  // add GeoJSON layer to the map once the file is loaded
-  L.geoJson(data).addTo(map);
-});
+// $.getJSON("bike-data-json.geojson",function(data){
+//   // add GeoJSON layer to the map once the file is loaded
+//   L.geoJson(data).addTo(map);
+// });
 
 
   </script>

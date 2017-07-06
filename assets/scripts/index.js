@@ -2,6 +2,7 @@
 
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
+const L = require('../../node_modules/leaflet/src/Leaflet.js')
 
 $(() => {
   setAPIOrigin(location, config)

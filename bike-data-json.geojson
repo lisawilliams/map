@@ -1,0 +1,1605 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.637006,39.213994 ]
+    },
+    "properties": {
+    "Address":"Location"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.120955,42.352208 ]
+    },
+    "properties": {
+    "Address":"1001 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.137148,42.353489 ]
+    },
+    "properties": {
+    "Address":"280 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.088268,42.329087 ]
+    },
+    "properties": {
+    "Address":"50 Kenilworth St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.02284,42.381653 ]
+    },
+    "properties": {
+    "Address":"584 Saratoga St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.062682,42.34769 ]
+    },
+    "properties": {
+    "Address":"222 Harrison Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.12539,42.286636 ]
+    },
+    "properties": {
+    "Address":"59 Lindall St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.05888,42.360083 ]
+    },
+    "properties": {
+    "Address":" Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.062033,42.35559 ]
+    },
+    "properties": {
+    "Address":"136 Tremont St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.089004,42.35008 ]
+    },
+    "properties": {
+    "Address":"420 Marlborough St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.080604,42.34632 ]
+    },
+    "properties": {
+    "Address":"87 Huntington Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.077301,42.350031 ]
+    },
+    "properties": {
+    "Address":"259 Dartmouth St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.081472,42.349681 ]
+    },
+    "properties": {
+    "Address":"232 Newbury St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.119751,42.3521 ]
+    },
+    "properties": {
+    "Address":"977 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.093475,42.33688 ]
+    },
+    "properties": {
+    "Address":"331 Ruggles St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.116298,42.351276 ]
+    },
+    "properties": {
+    "Address":"903 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.081313,42.349691 ]
+    },
+    "properties": {
+    "Address":"228 Newbury St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.08905,42.334769 ]
+    },
+    "properties": {
+    "Address":"1171 Tremont St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.10551,42.333586 ]
+    },
+    "properties": {
+    "Address":"746 Huntington Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.143545,42.272948 ]
+    },
+    "properties": {
+    "Address":"4760 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.089353,42.334357 ]
+    },
+    "properties": {
+    "Address":"47 Whittier St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.082001,42.310246 ]
+    },
+    "properties": {
+    "Address":"1 Stanwood St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.088754,42.29213 ]
+    },
+    "properties": {
+    "Address":"912 Blue Hill Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.13234,42.353271 ]
+    },
+    "properties": {
+    "Address":"157 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.074008,42.309182 ]
+    },
+    "properties": {
+    "Address":"197 Intervale St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.100399,42.334413 ]
+    },
+    "properties": {
+    "Address":"52 Saint Alphonsus St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.110179,42.351083 ]
+    },
+    "properties": {
+    "Address":"791 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.096907,42.332063 ]
+    },
+    "properties": {
+    "Address":"690 Parker St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.05888,42.360083 ]
+    },
+    "properties": {
+    "Address":" Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.130744,42.363094 ]
+    },
+    "properties": {
+    "Address":"202 Western Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.088728,42.324251 ]
+    },
+    "properties": {
+    "Address":"2676 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.102194,42.309517 ]
+    },
+    "properties": {
+    "Address":"78 Forest Hills St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.081724,42.345476 ]
+    },
+    "properties": {
+    "Address":"145 Huntington Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.057095,42.313497 ]
+    },
+    "properties": {
+    "Address":"1098 Dorchester Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.088212,42.348719 ]
+    },
+    "properties": {
+    "Address":"86 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.092448,42.332999 ]
+    },
+    "properties": {
+    "Address":"3 Prentiss St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.132714,42.34971 ]
+    },
+    "properties": {
+    "Address":"1265 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.113559,42.350947 ]
+    },
+    "properties": {
+    "Address":"851 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.094736,42.359052 ]
+    },
+    "properties": {
+    "Address":"76 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.083812,42.34241 ]
+    },
+    "properties": {
+    "Address":"208 St Botolph St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.131823,42.352794 ]
+    },
+    "properties": {
+    "Address":"140 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.138074,42.356112 ]
+    },
+    "properties": {
+    "Address":"77 Everett St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.121372,42.351441 ]
+    },
+    "properties": {
+    "Address":"242 Babcock St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.062976,42.342077 ]
+    },
+    "properties": {
+    "Address":"314 Albany St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.123981,42.243987 ]
+    },
+    "properties": {
+    "Address":"59 Faraday St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.087919,42.34814 ]
+    },
+    "properties": {
+    "Address":"368 Newbury St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0832,42.329594 ]
+    },
+    "properties": {
+    "Address":"34 Warren St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.115825,42.295195 ]
+    },
+    "properties": {
+    "Address":"21 Walk Hill St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.058202,42.354232 ]
+    },
+    "properties": {
+    "Address":"70 Summer St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.072679,42.333038 ]
+    },
+    "properties": {
+    "Address":"834 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.090157,42.287036 ]
+    },
+    "properties": {
+    "Address":"1092 Blue Hill Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.075044,42.35071 ]
+    },
+    "properties": {
+    "Address":"526 Boylston St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.104892,42.34991 ]
+    },
+    "properties": {
+    "Address":"697 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.086657,42.351058 ]
+    },
+    "properties": {
+    "Address":"16 Hereford St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.11484,42.310714 ]
+    },
+    "properties": {
+    "Address":"743 Centre St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.056101,42.357622 ]
+    },
+    "properties": {
+    "Address":"64 Water St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.086533,42.344868 ]
+    },
+    "properties": {
+    "Address":"226 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.07366,42.299375 ]
+    },
+    "properties": {
+    "Address":"2 Harvard St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.140064,42.352414 ]
+    },
+    "properties": {
+    "Address":"556 Cambridge St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.081724,42.345476 ]
+    },
+    "properties": {
+    "Address":"145 Huntington Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.116128,42.297902 ]
+    },
+    "properties": {
+    "Address":"3813 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.093475,42.33688 ]
+    },
+    "properties": {
+    "Address":"331 Ruggles St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.063755,42.36285 ]
+    },
+    "properties": {
+    "Address":"49 Staniford St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.098718,42.347026 ]
+    },
+    "properties": {
+    "Address":"70 Brookline Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.11599,42.351239 ]
+    },
+    "properties": {
+    "Address":"891 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.07389,42.323737 ]
+    },
+    "properties": {
+    "Address":"460 Dudley St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.094736,42.359052 ]
+    },
+    "properties": {
+    "Address":"76 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.073209,42.313711 ]
+    },
+    "properties": {
+    "Address":"97 Hartford St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.108322,42.305626 ]
+    },
+    "properties": {
+    "Address":"3507 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.131835,42.35493 ]
+    },
+    "properties": {
+    "Address":"23 Highgate St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.067582,42.352822 ]
+    },
+    "properties": {
+    "Address":"101 Boylston St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.129807,42.352669 ]
+    },
+    "properties": {
+    "Address":"98 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.087678,42.32623 ]
+    },
+    "properties": {
+    "Address":"2582 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.131823,42.352794 ]
+    },
+    "properties": {
+    "Address":"140 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.888595,42.530853 ]
+    },
+    "properties": {
+    "Address":"61 Lathrop Pl Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.157399,42.331319 ]
+    },
+    "properties": {
+    "Address":"398 Reservoir Rd Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.07508,42.313185 ]
+    },
+    "properties": {
+    "Address":"184 Quincy St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.069988,42.327245 ]
+    },
+    "properties": {
+    "Address":"199 Farnham St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.149975,42.35427 ]
+    },
+    "properties": {
+    "Address":"6 Gardena St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.134055,42.353296 ]
+    },
+    "properties": {
+    "Address":"189 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.076238,42.336915 ]
+    },
+    "properties": {
+    "Address":"3 E Springfield St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.064494,42.326843 ]
+    },
+    "properties": {
+    "Address":"1100 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.091285,42.348586 ]
+    },
+    "properties": {
+    "Address":"416 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.065156,42.29928 ]
+    },
+    "properties": {
+    "Address":"1 Tonawanda St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.058412,42.358513 ]
+    },
+    "properties": {
+    "Address":"201 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.100488,42.322799 ]
+    },
+    "properties": {
+    "Address":"252 Centre St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.065034,42.324615 ]
+    },
+    "properties": {
+    "Address":"1152 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.164871,42.340198 ]
+    },
+    "properties": {
+    "Address":"2155 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.087256,42.336752 ]
+    },
+    "properties": {
+    "Address":"869 Columbus Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.136947,42.362959 ]
+    },
+    "properties": {
+    "Address":"346 Western Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.129122,42.360565 ]
+    },
+    "properties": {
+    "Address":"280 N Harvard St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.136825,42.293729 ]
+    },
+    "properties": {
+    "Address":"1424 Centre St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.052011,42.293817 ]
+    },
+    "properties": {
+    "Address":"135 Neponset Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.068597,42.29588 ]
+    },
+    "properties": {
+    "Address":"28 Alpha Rd Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.056681,42.32368 ]
+    },
+    "properties": {
+    "Address":"796 Dorchester Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.064409,42.308734 ]
+    },
+    "properties": {
+    "Address":"1 Hendry St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.077221,42.288147 ]
+    },
+    "properties": {
+    "Address":"122 Norfolk St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.070625,42.3036 ]
+    },
+    "properties": {
+    "Address":"145 Bowdoin St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0779,42.337435 ]
+    },
+    "properties": {
+    "Address":"532 Shawmut Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.063046,42.350867 ]
+    },
+    "properties": {
+    "Address":"10 Stuart St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.111356,42.31965 ]
+    },
+    "properties": {
+    "Address":"454 Centre St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.075738,42.292951 ]
+    },
+    "properties": {
+    "Address":"80 Wheatland Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.08788,42.348151 ]
+    },
+    "properties": {
+    "Address":"366 Newbury St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.067582,42.352822 ]
+    },
+    "properties": {
+    "Address":"101 Boylston St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.063496,42.318415 ]
+    },
+    "properties": {
+    "Address":"59 Uphams Ct Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.123763,42.319413 ]
+    },
+    "properties": {
+    "Address":"299 Perkins St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.13089,42.350818 ]
+    },
+    "properties": {
+    "Address":"1219 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.064901,42.317062 ]
+    },
+    "properties": {
+    "Address":"603 Columbia Rd Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.089883,42.344043 ]
+    },
+    "properties": {
+    "Address":"88 Hemenway St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.097295,42.316808 ]
+    },
+    "properties": {
+    "Address":"3022 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.074593,42.338196 ]
+    },
+    "properties": {
+    "Address":"1630 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.104189,42.324555 ]
+    },
+    "properties": {
+    "Address":"38 Walden St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.052457,42.359519 ]
+    },
+    "properties": {
+    "Address":"227 State St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.075044,42.35071 ]
+    },
+    "properties": {
+    "Address":"526 Boylston St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.07288,42.349 ]
+    },
+    "properties": {
+    "Address":"370 Stuart St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.15304,42.346197 ]
+    },
+    "properties": {
+    "Address":"188 Union St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.064689,42.34359 ]
+    },
+    "properties": {
+    "Address":"122 E Berkeley St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.074934,42.345986 ]
+    },
+    "properties": {
+    "Address":"190 Chandler St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.07048,42.359377 ]
+    },
+    "properties": {
+    "Address":"102 Revere St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.087086,42.340999 ]
+    },
+    "properties": {
+    "Address":"306 Huntington Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.059353,42.324785 ]
+    },
+    "properties": {
+    "Address":"99 Bellflower St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.070606,42.360454 ]
+    },
+    "properties": {
+    "Address":"147 Charles St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.087936,42.345172 ]
+    },
+    "properties": {
+    "Address":"5 Norway St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.114442,42.302015 ]
+    },
+    "properties": {
+    "Address":"246 South St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.057206,42.313016 ]
+    },
+    "properties": {
+    "Address":"1106 Dorchester Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.028571,42.378548 ]
+    },
+    "properties": {
+    "Address":"367 Chelsea St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.063331,42.300388 ]
+    },
+    "properties": {
+    "Address":"29 Charles St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.08131,42.310821 ]
+    },
+    "properties": {
+    "Address":"406 Blue Hill Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.071184,42.323981 ]
+    },
+    "properties": {
+    "Address":"198 George St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.126875,42.35243 ]
+    },
+    "properties": {
+    "Address":"31 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.131823,42.352794 ]
+    },
+    "properties": {
+    "Address":"140 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.073677,42.385102 ]
+    },
+    "properties": {
+    "Address":"7 Alford St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.104319,42.349841 ]
+    },
+    "properties": {
+    "Address":"681 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.110764,42.328946 ]
+    },
+    "properties": {
+    "Address":"122 S Huntington Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.036142,42.373701 ]
+    },
+    "properties": {
+    "Address":"167 Paris St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.066531,42.360966 ]
+    },
+    "properties": {
+    "Address":"226 Cambridge St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.105332,42.346181 ]
+    },
+    "properties": {
+    "Address":"901 Beacon St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.110179,42.351083 ]
+    },
+    "properties": {
+    "Address":"791 Commonwealth Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.069333,42.361067 ]
+    },
+    "properties": {
+    "Address":"330 Cambridge St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.076997,42.350806 ]
+    },
+    "properties": {
+    "Address":"140 Newbury St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.080293,42.288994 ]
+    },
+    "properties": {
+    "Address":"39 Callender St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.050314,42.338865 ]
+    },
+    "properties": {
+    "Address":"306 W Broadway Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.082918,42.316506 ]
+    },
+    "properties": {
+    "Address":"453 Warren St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.134434,42.353343 ]
+    },
+    "properties": {
+    "Address":"195 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.075817,42.34949 ]
+    },
+    "properties": {
+    "Address":"28 Trinity Pl Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.05888,42.360083 ]
+    },
+    "properties": {
+    "Address":" Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.105134,42.3413 ]
+    },
+    "properties": {
+    "Address":"305 Brookline Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.11389,42.31439 ]
+    },
+    "properties": {
+    "Address":"610 Centre St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.137019,42.353575 ]
+    },
+    "properties": {
+    "Address":"285 Brighton Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.09416,42.268095 ]
+    },
+    "properties": {
+    "Address":"1647 Blue Hill Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.075113,42.335044 ]
+    },
+    "properties": {
+    "Address":"746 Massachusetts Ave Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0726,42.309218 ]
+    },
+    "properties": {
+    "Address":"1 Richfield St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.092037,42.32159 ]
+    },
+    "properties": {
+    "Address":"2803 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.082307,42.348751 ]
+    },
+    "properties": {
+    "Address":"806 Boylston St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.082815,42.309335 ]
+    },
+    "properties": {
+    "Address":"1 Georgia St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.076585,42.336443 ]
+    },
+    "properties": {
+    "Address":"1746 Washington St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.037225,42.34773 ]
+    },
+    "properties": {
+    "Address":"301 Congress St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.150412,42.345598 ]
+    },
+    "properties": {
+    "Address":"65 Union St Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.077951,42.341872 ]
+    },
+    "properties": {
+    "Address":"29 Rutland Sq Boston, MA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.076585,42.336443 ]
+    },
+    "properties": {
+    "Address":"1746 Washington St Boston, MA"
+    }
+  }
+]
+}
