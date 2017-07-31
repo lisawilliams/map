@@ -10,6 +10,6 @@ require('./assets/scripts/index.js')
 // styles
 require('./assets/styles/index.scss')
 
-// require('./node_modules/leaflet/src/Leaflet.js')
+require('./node_modules/leaflet/src/Leaflet.js')
 
 require('leaflet')
