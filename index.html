@@ -45,24 +45,34 @@ crossorigin="anonymous"></script>
 
       <!-- Sidebar links -->
       <ul class="list-unstyled components">
-        <li class="active"><a href="#leaflet">What Is Leaflet?</a></li>
-        <li><a href="http://leafletjs.com/reference-1.1.0.html">Leaflet.js Docs</a></li>
-      </ul>
+        <li class="active">
+          <ul class="list-unstyled components">
+            <!-- <p>About Leaflet</p> -->
+            <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">About Leaflet</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li><a href="#leaflet">What Is Leaflet?</a></li>
+                  <li><a href="http://leafletjs.com/reference-1.1.0.html">Leaflet.js Docs</a></li>
+                  <li><a href="examples">Leaflet Examples</a></li>
+              </ul>
+
+
+
 
       <!-- Link with dropdown items -->
       <li>
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Examples</a>
-        <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li><a href="#">Page</a></li>
-          <li><a href="#">Page</a></li>
-          <li><a href="#">Page</a></li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">About Lisa Williams</a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li><a href="http://tomlinson.org/resume/">About Lisa</a></li>
+          <li><a href="http://dataforradicals.com">More Data Journalism Tutorials From Lisa</a></li>
+          <li><a href="http://tomlinson.org/contact">Contact</a></li>
+          <li><a href="http://twitter.com/lisawilliams">Twitter</a></li>
+          <li><a href="http://linkedin.com/in/lisawilliams">LinkedIn</a></li>
         </ul>
 
-      <li><a href="#"></a></li>
-      <li><a href="http://tomlinson.org/resume/">About Lisa Williams</a></li>
+
         <li><a href="https://github.com/lisawilliams/map/">Source code</a></li>
-        <li><a href="http://dataforradicals.com">More Data Journalism Tutorials</a></li>
-      <li><a href="http://tomlinson.org/contact">Contact</a></li>
+
 </ul>
     </nav>
 
