@@ -1,7 +1,7 @@
 <html !DOCTYPE>
 
 <head>
-  <title>Bootstrap 3 Collapsible Sidebar</title>
+  <title>Data Driven Maps with Leaflet.js</title>
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Our Custom CSS -->
@@ -34,18 +34,18 @@ crossorigin="anonymous"></script>
       <!-- Sidebar header -->
 
       <div class="sidebar-header">
-        <h3>Collapsible Sidebar</h3>
+        <h3>Data-Driven Maps with Leaflet.js</h3>
       </div>
 
       <!-- Sidebar links -->
       <ul class="list-unstyled components">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li class="active"><a href="#leaflet">What Is Leaflet?</a></li>
+        <li><a href="http://leafletjs.com/reference-1.1.0.html">Leaflet.js Docs</a></li>
       </ul>
 
       <!-- Link with dropdown items -->
       <li>
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Examples</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li><a href="#">Page</a></li>
           <li><a href="#">Page</a></li>
@@ -99,6 +99,59 @@ crossorigin="anonymous"></script>
 
 
       </script>
+
+
+<br><br><br><br><br><br>
+      <h3><a name="leaflet">What is Leaflet, Anyway?</a></h3>
+
+      <p>Leaflet is a lightweight mapping library for Javascript. Well-documented,
+      with an active developer community, and weighing in at only 38k, it is
+      one of the leading mapping libraries used on the web today.</p>
+
+      <p><strong>Leaflet Basics</strong></p>
+
+      <p>Every Leaflet map has a few things in common:</p>
+
+      <ol>
+      <li>A basemap;
+      <li>A tile layer corresponding to that basemap;
+      <li>An initial view, which sets the center point of the map and the zoom level.
+      </ol>
+
+      <p>All of these are called on the .map class, Leaflet's central class.</p>
+
+      <p>But just showing a basemap and its corresponding tiles isn't all that interesting, and
+      leaflet probably wouldn't exist if simple .png images of maps would do the job. Leaflet
+      allows us to make data-driven maps with elements that we can style with CSS.</p>
+
+      <p>Leaflet consumes GeoJSON, a flavor of JSON that lets us express latitude/longitude
+      pairs and lots of other kinds of data about those points.</p>
+
+      <p>In our example map below, we're using a basemap and tiles from the Metropolitan
+      Area Planning Commission, an agency of the state of Massachusetts that does
+      civic planning work. MAPC does a lot of transportation infrastructure work,
+      including work that attempts to improve conditions for pedestrians and cyclists.</p>
+
+      <p>We can add a tile layer that shows bike trails and lanes from MAPC.</p>
+
+      <p>That's interesting, but how does it relate to, say, bike accident data?</p>
+
+      <p>I used the following  dataset on bike/car collisions.</p>
+
+      <p>Since that dataset is in Excel, I needed to convert it into GeoJSON.
+      But first, I noticed that what looked like lat/lon data was actually not.
+      That meant we had to geocode the addresses. After concatenating fields
+      with the address, city and state name, I handed the .csv data to a
+      <a href = "https://www.doogal.co.uk/BatchGeocoding.php">batch geocoder</a>,
+      which translated the plain-english addresses into lat/lon pairs.</p>
+
+      <p>That still needed to be converted into GeoJSON, which can be done at
+      <a href ="http://www.convertcsv.com/csv-to-geojson.htm">ConvertCSV.com</a>.</p>
+
+      <p>Leaflet depends on jQuery to load datasets, but now that we have
+      our data in GeoJSON, we can call it.</p>
+
+
 
     </div>
 
