@@ -1,43 +1,111 @@
-<html>
+<html !DOCTYPE>
+
 <head>
-  <title>What is Leaflet.js, Anyway?</title>
-  <!-- <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script> -->
+  <title>Data Driven Maps with Leaflet.js</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+<!-- Require jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+ <!-- Require leaflet styling and library -->
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <style>
-    #map{ width: 900px; height: 500px; }
-  </style>
+
+<!-- Initialize map object and set size -->
+<style>
+  #map{ width: 900px; height: 500px; }
+</style>
+
 </head>
+
 <body>
 
-  <body class="container-fluid">
+  <div class="wrapper">
 
-  <div class = "container">
-    <div class="jumbotron">
-     <h1>What is Leaflet, Anyways?</h1>
-     <div class ="well">
-       <div class="btn-group" role="group" aria-label="Leaflet Intro Controls">
-        <a href="http://leafletjs.com/reference-1.1.0.html" class="btn btn-secondary">Leaflet.js Docs</a>
-       <button type="button" class="btn btn-secondary">Intro</button>
-       <button type="button" class="btn btn-secondary">Example Map</button>
-       <button type="button" class="btn btn-secondary">Presentation</button>
+    <!-- Sidebar -->
+    <nav id="sidebar">
 
-     </div>
-   </div>
- </div>
+      <!-- Sidebar header -->
 
- <div class="container">
-   <div class="row article">
-   <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
+      <div class="sidebar-header">
+        <h3>Data-Driven Maps with Leaflet.js</h3>
+      </div>
 
-        <div class ="well"><h2>Intro to Leaflet</h2></div>
-        <p>Leaflet is a lightweight mapping library for Javascript. Well-documented,
-        with an active developer community, and weighing in at only 38k, it is
+      <!-- Sidebar links -->
+      <ul class="list-unstyled components">
+        <li class="active"><a href="#leaflet">What Is Leaflet?</a></li>
+        <li><a href="http://leafletjs.com/reference-1.1.0.html">Leaflet.js Docs</a></li>
+      </ul>
+
+      <!-- Link with dropdown items -->
+      <li>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Examples</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+</ul>
+    </nav>
+
+    <!-- Page content -->
+    <div id="content">
+      <!-- We'll put some dummy content in here -->
+      <!-- Sidebar collapse toggle button -->
+      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+        <i class="glyphicon glyphicon-align-left"></i>
+        Toggle Sidebar
+      </button>
+
+<div id="map"></div>
+      <script>
+
+    // require leaflet
+
+    // const L = require('leaflet.js')
+
+      // initialize the map
+      var map = L.map('map').setView([42.35, -71.08], 13);
+
+      // load a tile layer
+      L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+        {
+          attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+          maxZoom: 17,
+          minZoom: 9
+        }).addTo(map);
+
+        // bike lanes
+    L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
+    {
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+    // load GeoJSON from an external file
+    $.getJSON("bike-data-json.geojson",function(data){
+      // add GeoJSON layer to the map once the file is loaded
+      L.geoJson(data).addTo(map);
+    });
+
+
+      </script>
+
+
+<br><br><br><br><br><br>
+      <h3><a name="leaflet">What is Leaflet, Anyway?</a></h3>
+
+      <p>Leaflet is a lightweight mapping library for Javascript. Well-documented,
+      with an active developer community, and weighing in at only 38k, it is
       one of the leading mapping libraries used on the web today.</p>
 
       <p><strong>Leaflet Basics</strong></p>
@@ -45,9 +113,9 @@
       <p>Every Leaflet map has a few things in common:</p>
 
       <ol>
-        <li>A basemap;
-        <li>A tile layer corresponding to that basemap;
-        <li>An initial view, which sets the center point of the map and the zoom level.
+      <li>A basemap;
+      <li>A tile layer corresponding to that basemap;
+      <li>An initial view, which sets the center point of the map and the zoom level.
       </ol>
 
       <p>All of these are called on the .map class, Leaflet's central class.</p>
@@ -83,61 +151,24 @@
       <p>Leaflet depends on jQuery to load datasets, but now that we have
       our data in GeoJSON, we can call it.</p>
 
-   </div>
- </div>
- </div>
-
- <div class="container">
-  <div class="row article">
-  <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
-  <div id="map"></div>
-
-  <script>
-
-// require leaflet
-
-// const L = require('leaflet.js')
-
-  // initialize the map
-  var map = L.map('map').setView([42.35, -71.08], 13);
-
-  // load a tile layer
-  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
-    {
-      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-      maxZoom: 17,
-      minZoom: 9
-    }).addTo(map);
-
-    // bike lanes
-L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
-{
-  maxZoom: 17,
-  minZoom: 9
-}).addTo(map);
-
-// load GeoJSON from an external file
-$.getJSON("bike-data-json.geojson",function(data){
-  // add GeoJSON layer to the map once the file is loaded
-  L.geoJson(data).addTo(map);
-});
 
 
-  </script>
-
-</div>
-</div>
-</div>
-
-<div class="container">
-  <div class="row article">
-  <div class="col-lg-12 col-md-12 col-sm-12col-xs-12">
-
-
+    </div>
 
   </div>
-</div>
-</div>
-
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- Bootstrap Js CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
+<script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+
+
 </html>
