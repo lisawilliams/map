@@ -22,6 +22,10 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
+img.resize {
+  width:450px;
+  height:300px;
+}
 
 .navbar {
     padding: 15px 10px;

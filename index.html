@@ -117,11 +117,11 @@
       <br><br><br><br><br><br>
       <BR>
       <BR>
-      <h3><a name="leaflet">What is Leaflet, Anyway?</a></h3>
+      <h2><a name="leaflet">What is Leaflet, Anyway?</a></h2>
 
       <p>Leaflet is a lightweight mapping library for Javascript. Well-documented, with an active developer community, and weighing in at only 38k, it is one of the leading mapping libraries used on the web today.</p>
 
-      <p><strong>Leaflet Basics</strong></p>
+      <h3>Leaflet Basics</h3>
 
       <p>Every Leaflet map has a few things in common:</p>
 
@@ -140,25 +140,37 @@
       <a href ="https://raw.githubusercontent.com/lisawilliams/map/master/bike-data-json.geojson">Here's the GeoJSON that contains the points for this map</a>.</p>
 
 
-For our example map, our three layers are:
+<p>For our example map, we have three layers: a basemap, a layer showing bike lanes and bike facilities, and our data layer, showing bike collisions in Boston.</p>
 
-<ol>
-  <li> A basemap and tile layer: In our example map above, we're using a basemap and tiles from the Metropolitan Area Planning Commission, an agency of the state of Massachusetts that does civic planning work. MAPC does a lot of transportation infrastructure work, including work
-        that attempts to improve conditions for pedestrians and cyclists.</li>
-  <li>An initial view: in our case, we are giving the map on-screen dimensions of 900 by 600 pixels:<br>
+<H3>The basemap</H3>
+ <p>In our example map above, we're using a basemap and tiles from the Metropolitan Area Planning Commission, an agency of the state of Massachusetts that does civic planning work. MAPC does a lot of transportation infrastructure work, including work
+        that attempts to improve conditions for pedestrians and cyclists.</p>
+<p> At this stage, we also give our map an initial view and a centerpoint. </p>
+
+<p>We set our initial view like so, giving our map a width of 900 pixels and a height of 600 pixels:</p>
+          <br>
           <code>
             #map {
               width: 900px;
               height: 500px;
             }</code>
-<br>
-            We are also setting its centerpoint by giving it a variable and loading that variable with latitude and longitude coordinates:<br>
-          <code>var map = L.map('map').setView([42.35, -71.08], 13);</code></li>
+<br>We are also setting its centerpoint by giving it a variable and loading that variable with latitude and longitude coordinates:<br>
+          <code>var map = L.map('map').setView([42.35, -71.08], 13);</code>
 
-        </ul>
+        <p> Now our map looks like this:</p>
+
+        <img class="resize" src ="./images/basemap.png">
+
+      <h3>    Adding a layer on top of the basemap </h3>
 <br>
       <p>  So we now have the basic components of a Leaflet map, but it's not very interesting yet.
         Let's add a layer, also from MAPC, showing bike lanes and bike facilities.</p>
+
+        <p> Now our map looks like this:</p>
+
+        <img class="resize" src ="./images/bike-lanes.png">
+
+        <h3>Adding the data layer</h3>
 
       <p>That's interesting, but how does it relate to, say, bike accident data?</p>
 
@@ -176,6 +188,15 @@ For our example map, our three layers are:
         <span style="text-decoration: underline;"><a href ="http://www.convertcsv.com/csv-to-geojson.htm">ConvertCSV.com</a></span>.</p>
 
         <p>At last! We have a data source Leaflet can use to drop points on our map, which lets us create a new layer comparing bike collisions with bike lanes and facilities.</p>
+
+        <p> Now our map looks like this:</p>
+
+        <img class="resize" src ="./images/datalayer.png"><br><br>
+
+        <p>For more information about Leaflet, see the sidebar for documentation and see below for other examples of maps made with Leaflet. </p>
+
+        <p> To connect with me, see the sidebar for my bio and contact information.</p>
+
 
       <BR>
       <BR>
