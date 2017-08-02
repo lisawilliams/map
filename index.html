@@ -134,68 +134,68 @@
       <p>All of these are called on the .map class, Leaflet's central class.</p>
 
       <p>But just showing a basemap and its corresponding tiles isn't all that interesting, and leaflet probably wouldn't exist if simple .png images of maps would do the job. Leaflet allows us to make data-driven maps with elements that we can style with
-        CSS.</p>
+        CSS.
+      </p>
 
       <p>Leaflet consumes GeoJSON, a flavor of JSON that lets us express latitude/longitude pairs and lots of other kinds of data about those points.
-      <a href ="https://raw.githubusercontent.com/lisawilliams/map/master/bike-data-json.geojson">Here's the GeoJSON that contains the points for this map</a>.</p>
+        <a href="https://raw.githubusercontent.com/lisawilliams/map/master/bike-data-json.geojson">Here's the GeoJSON that contains the points for this map</a>.</p>
 
 
-<p>For our example map, we have three layers: a basemap, a layer showing bike lanes and bike facilities, and our data layer, showing bike collisions in Boston.</p>
+      <p>For our example map, we have three layers: a basemap, a layer showing bike lanes and bike facilities, and our data layer, showing bike collisions in Boston.</p>
 
-<H3>The basemap</H3>
- <p>In our example map above, we're using a basemap and tiles from the Metropolitan Area Planning Commission, an agency of the state of Massachusetts that does civic planning work. MAPC does a lot of transportation infrastructure work, including work
+      <H3>The basemap</H3>
+      <p>In our example map above, we're using a basemap and tiles from the Metropolitan Area Planning Commission, an agency of the state of Massachusetts that does civic planning work. MAPC does a lot of transportation infrastructure work, including work
         that attempts to improve conditions for pedestrians and cyclists.</p>
-<p> At this stage, we also give our map an initial view and a centerpoint. </p>
+      <p> At this stage, we also give our map an initial view and a centerpoint. </p>
 
-<p>We set our initial view like so, giving our map a width of 900 pixels and a height of 600 pixels:</p>
-          <br>
-          <code>
+      <p>We set our initial view like so, giving our map a width of 900 pixels and a height of 600 pixels:</p>
+      <br>
+      <code>
             #map {
               width: 900px;
               height: 500px;
             }</code>
-<br>We are also setting its centerpoint by giving it a variable and loading that variable with latitude and longitude coordinates:<br>
-          <code>var map = L.map('map').setView([42.35, -71.08], 13);</code>
+      <br>We are also setting its centerpoint by giving it a variable and loading that variable with latitude and longitude coordinates:<br>
+      <code>var map = L.map('map').setView([42.35, -71.08], 13);</code>
 
-        <p> Now our map looks like this:</p>
+      <p> Now our map looks like this:</p>
 
-        <img class="resize" src ="./images/basemap.png">
+      <img class="resize" src="./images/basemap.png">
 
       <h3>    Adding a layer on top of the basemap </h3>
-<br>
-      <p>  So we now have the basic components of a Leaflet map, but it's not very interesting yet.
-        Let's add a layer, also from MAPC, showing bike lanes and bike facilities.</p>
+      <br>
+      <p> So we now have the basic components of a Leaflet map, but it's not very interesting yet. Let's add a layer, also from MAPC, showing bike lanes and bike facilities.</p>
 
-        <p> Now our map looks like this:</p>
+      <p> Now our map looks like this:</p>
 
-        <img class="resize" src ="./images/bike-lanes.png">
+      <img class="resize" src="./images/bike-lanes.png">
 
-        <h3>Adding the data layer</h3>
+      <h3>Adding the data layer</h3>
 
       <p>That's interesting, but how does it relate to, say, bike accident data?</p>
 
       <p>Our map uses the following <span style="text-decoration: underline;"><a href ="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/24713">dataset on bike/car collisions</a></span>.</p>
 
-      <p>Since that dataset is in Excel, I needed to convert it into GeoJSON. JSON is a data format used to pass data between many different applications, and GeoJSON is a variant with special features to express geographical data.
-         But first, I noticed that what looked like lat/lon data was actually not. That meant we had to geocode the addresses. Geocoding is the process of turning plain-English street addresses into latitude and longitude coordinates that we can then use in our map.
-         After concatenating fields with the address, city and state
-        name into a single field (since most geocoders want it that way), I handed the .csv file to a
+      <p>Since that dataset is in Excel, I needed to convert it into GeoJSON. JSON is a data format used to pass data between many different applications, and GeoJSON is a variant with special features to express geographical data. But first, I noticed that
+        what looked like lat/lon data was actually not. That meant we had to geocode the addresses. Geocoding is the process of turning plain-English street addresses into latitude and longitude coordinates that we can then use in our map. After concatenating
+        fields with the address, city and state name into a single field (since most geocoders want it that way), I handed the .csv file to a
         <span style="text-decoration: underline;"><a href = "https://www.doogal.co.uk/BatchGeocoding.php">batch geocoder</a></span>, which translated the plain-english addresses into lat/lon pairs.</p>
 
-        <p> If you think this sounds like more work than building the map, you are absolutely correct. By far the most time I spend on creating data visualizations is spent on data cleanup -- getting data into formats data visualization tools and libraries can use. </p>
+      <p> If you think this sounds like more work than building the map, you are absolutely correct. By far the most time I spend on creating data visualizations is spent on data cleanup -- getting data into formats data visualization tools and libraries
+        can use. </p>
 
       <p>Our CSV now has latitude and longitude, but we still have data cleanup to do: our file needs to be converted into GeoJSON, which can be done at
         <span style="text-decoration: underline;"><a href ="http://www.convertcsv.com/csv-to-geojson.htm">ConvertCSV.com</a></span>.</p>
 
-        <p>At last! We have a data source Leaflet can use to drop points on our map, which lets us create a new layer comparing bike collisions with bike lanes and facilities.</p>
+      <p>At last! We have a data source Leaflet can use to drop points on our map, which lets us create a new layer comparing bike collisions with bike lanes and facilities.</p>
 
-        <p> Now our map looks like this:</p>
+      <p> Now our map looks like this:</p>
 
-        <img class="resize" src ="./images/datalayer.png"><br><br>
+      <img class="resize" src="./images/datalayer.png"><br><br>
 
-        <p>For more information about Leaflet, see the sidebar for documentation and see below for other examples of maps made with Leaflet. </p>
+      <p>For more information about Leaflet, see the sidebar for documentation and see below for other examples of maps made with Leaflet. </p>
 
-        <p> To connect with me, see the sidebar for my bio and contact information.</p>
+      <p> To connect with me, see the sidebar for my bio and contact information.</p>
 
 
       <BR>
