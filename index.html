@@ -1,0 +1,239 @@
+<html !DOCTYPE>
+
+<head>
+  <title>Data Driven Maps with Leaflet.js</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Require jQuery -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Require leaflet styling and library -->
+  <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
+
+  <!-- HTTPS versions of Leaflet libraries for grunt deploy -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.css" integrity="sha256-5piEyhaG15nC4xz3JkR5cXmYqv7nWig0wO73EFNL/nw=" crossorigin="anonymous" />
+
+
+  <!-- Initialize map object and set size -->
+  <style>
+    #map {
+      width: 900px;
+      height: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+
+      <!-- Sidebar header -->
+
+      <div class="sidebar-header">
+        <h3>Data-Driven Maps with Leaflet.js</h3>
+      </div>
+
+      <!-- Sidebar links -->
+      <ul class="list-unstyled components">
+        <li class="active">
+          <ul class="list-unstyled components">
+            <!-- <p>About Leaflet</p> -->
+            <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">About Leaflet</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="#leaflet">What Is Leaflet?</a></li>
+                <li><a href="http://leafletjs.com/reference-1.1.0.html">Leaflet.js Docs</a></li>
+                <li><a href="#examples">Leaflet Examples</a></li>
+              </ul>
+
+              <!-- Link with dropdown items -->
+              <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">About Lisa Williams</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li><a href="http://tomlinson.org/resume/">Bio</a></li>
+                  <li><a href="http://dataforradicals.com">Data Journalism Tutorials</a></li>
+                  <li><a href="http://tomlinson.org/contact">Contact</a></li>
+                  <li><a href="http://twitter.com/lisawilliams">Twitter</a></li>
+                  <li><a href="http://linkedin.com/in/lisawilliams">LinkedIn</a></li>
+                </ul>
+
+
+                <li><a href="https://github.com/lisawilliams/map/">Source code</a></li>
+
+          </ul>
+    </nav>
+
+    <!-- Page content -->
+    <div id="content">
+      <!-- We'll put some dummy content in here -->
+      <!-- Sidebar collapse toggle button -->
+      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+        <i class="glyphicon glyphicon-align-left"></i>
+        Toggle Sidebar
+      </button>
+
+      <h1>Basics of Data Driven Maps With Leaflet.js</h1>
+
+      <H4>Bicycle collisions in Boston</H4>
+
+      <p> Part of a data-driven map talk given by <span style="text-decoration: underline;"><a href ="http://tomlinson.org/resume">Lisa Williams</a></span> at <span style="text-decoration: underline;"><a href ="https://www.meetup.com/ONA-Boston/events/240919759/">#ONABoston on August 2, 2017.</a></span></p>
+
+
+      <div id="map"></div>
+      <script>
+        // initialize the map
+        var map = L.map('map').setView([42.35, -71.08], 13);
+
+        // load a tile layer
+        L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png', {
+          attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+          maxZoom: 17,
+          minZoom: 9
+        }).addTo(map);
+
+        // bike lanes
+        L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png', {
+          maxZoom: 17,
+          minZoom: 9
+        }).addTo(map);
+
+        // load GeoJSON from an external file
+        $.getJSON("bike-data-json.geojson", function(data) {
+          // add GeoJSON layer to the map once the file is loaded
+          L.geoJson(data).addTo(map);
+        });
+      </script>
+
+
+      <br><br><br><br><br><br>
+      <BR>
+      <BR>
+      <h2><a name="leaflet">What is Leaflet, Anyway?</a></h2>
+
+      <p>Leaflet is a lightweight mapping library for Javascript. Well-documented, with an active developer community, and weighing in at only 38k, it is one of the leading mapping libraries used on the web today.</p>
+
+      <h3>Leaflet Basics</h3>
+
+      <p>Every Leaflet map has a few things in common:</p>
+
+      <ol>
+        <li>A basemap;
+          <li>A tile layer corresponding to that basemap;
+            <li>An initial view, which sets the center point of the map and the zoom level.
+      </ol>
+
+      <p>All of these are called on the .map class, Leaflet's central class.</p>
+
+      <p>But just showing a basemap and its corresponding tiles isn't all that interesting, and leaflet probably wouldn't exist if simple .png images of maps would do the job. Leaflet allows us to make data-driven maps with elements that we can style with
+        CSS.
+      </p>
+
+      <p>Leaflet consumes GeoJSON, a flavor of JSON that lets us express latitude/longitude pairs and lots of other kinds of data about those points.
+          <span style="text-decoration: underline;"><a href="https://raw.githubusercontent.com/lisawilliams/map/master/bike-data-json.geojson">Here's the GeoJSON that contains the points for this map</a></span>.</p>
+
+
+      <p>For our example map, we have three layers: a basemap, a layer showing bike lanes and bike facilities, and our data layer, showing bike collisions in Boston.</p>
+
+      <H3>The basemap</H3>
+      <p>In our example map above, we're using a basemap and tiles from the Metropolitan Area Planning Commission, an agency of the state of Massachusetts that does civic planning work. MAPC does a lot of transportation infrastructure work, including work
+        that attempts to improve conditions for pedestrians and cyclists.</p>
+      <p> At this stage, we also give our map an initial view and a centerpoint. </p>
+
+      <p>We set our initial view like so, giving our map a width of 900 pixels and a height of 600 pixels:</p>
+      <br>
+      <code>
+            #map {
+              width: 900px;
+              height: 500px;
+            }</code>
+      <br>We are also setting its centerpoint by giving it a variable and loading that variable with latitude and longitude coordinates:<br>
+      <code>var map = L.map('map').setView([42.35, -71.08], 13);</code>
+
+      <p> Now our map looks like this:</p>
+
+      <img class="resize" src="./images/basemap.png">
+
+      <h3>    Adding a layer on top of the basemap </h3>
+      <br>
+      <p> So we now have the basic components of a Leaflet map, but it's not very interesting yet. Let's add a layer, also from MAPC, showing bike lanes and bike facilities.</p>
+
+      <p> Now our map looks like this:</p>
+
+      <img class="resize" src="./images/bike-lanes.png">
+
+      <h3>Adding the data layer</h3>
+
+      <p>That's interesting, but how does it relate to, say, bike accident data?</p>
+
+      <p>Our map uses the following <span style="text-decoration: underline;"><a href ="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/24713">dataset on bike/car collisions</a></span>.</p>
+
+      <p>Since that dataset is in Excel, I needed to convert it into GeoJSON. JSON is a data format used to pass data between many different applications, and GeoJSON is a variant with special features to express geographical data. But first, I noticed that
+        what looked like lat/lon data was actually not. That meant we had to geocode the addresses. Geocoding is the process of turning plain-English street addresses into latitude and longitude coordinates that we can then use in our map. After concatenating
+        fields with the address, city and state name into a single field (since most geocoders want it that way), I handed the .csv file to a
+        <span style="text-decoration: underline;"><a href = "https://www.doogal.co.uk/BatchGeocoding.php">batch geocoder</a></span>, which translated the plain-english addresses into lat/lon pairs.</p>
+
+      <p> If you think this sounds like more work than building the map, you are absolutely correct. By far the most time I spend on creating data visualizations is spent on data cleanup -- getting data into formats data visualization tools and libraries
+        can use. </p>
+
+      <p>Our CSV now has latitude and longitude, but we still have data cleanup to do: our file needs to be converted into GeoJSON, which can be done at
+        <span style="text-decoration: underline;"><a href ="http://www.convertcsv.com/csv-to-geojson.htm">ConvertCSV.com</a></span>.</p>
+
+      <p>At last! We have a data source Leaflet can use to drop points on our map, which lets us create a new layer comparing bike collisions with bike lanes and facilities.</p>
+
+      <p> Now our map looks like this:</p>
+
+      <img class="resize" src="./images/datalayer.png"><br><br>
+
+      <p>For more information about Leaflet, see the sidebar for documentation and see below for other examples of maps made with Leaflet. </p>
+
+      <p> To connect with me, see the sidebar for my bio and contact information.</p>
+
+
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+      <h3><a name="examples">Leaflet Examples</a></h3>
+
+      <ul>
+        <li><span style="text-decoration: underline;"><a href ="http://rclark.github.io/grand-canyon-geology/">Grand Canyon Geology</a></span> Note the use of legends that respond to where a user mousovers</li>
+        <li><span style="text-decoration: underline;"><a href ="http://lo-ise.github.io/leafarctica/#0/-87/0">LeafArctica</a></span>, which maps satellite photography of Antarctica with a set of tiles with lat/lon coordinates. You can match photos to lat/lon
+          to make 'photomaps.'</li>
+        <li><span style="text-decoration: underline;"><a href ="https://www.windy.com/?53.801,-1.582,4">Windy</a></span>, a leaflet-based map that uses realtime data from weather stations</li>
+        <li><span style="text-decoration: underline;"><a href ="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/">Zelda: Breath of the Wild</a></span> Maps don't have to be of Earth! Here's a map of Hyrule from the popular video game Zelda.</li>
+        <li><span style="text-decoration: underline;"><a href ="http://graphics.latimes.com/kobe-every-shot-ever/">Every Shot Kobe Bryant Ever Took</a></span> They don't even really have to be maps at all, as with this diagram of an NBA player's shots.</li>
+      </ul>
+
+
+
+    </div>
+
+  </div>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- Bootstrap Js CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#sidebarCollapse').on('click', function() {
+      $('#sidebar').toggleClass('active');
+    });
+  });
+</script>
+
+
+</html>
